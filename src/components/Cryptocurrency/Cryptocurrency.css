@@ -1,0 +1,63 @@
+/* Cryptocurrency.css */
+.cryptocurrency-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 20px;
+    margin-left: 250px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: calc(33.33% - 40px);
+    /* Adjust width for responsive layout */
+    max-width: 300px;
+    /* Maximum width for larger screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 40px);
+        /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: calc(100% - 40px);
+        /* Adjust width for extra small screens */
+    }
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.currency {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 24px;
+    color: #333;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}

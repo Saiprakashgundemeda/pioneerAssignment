@@ -1,0 +1,22 @@
+/* Graph.css */
+
+/* Default styling */
+.graph-container {
+    width: 80%;
+    height: 500px;
+    padding: 20px;
+    margin-left: 250px;
+    /* Sidebar width */
+}
+
+/* Responsive styling for small devices */
+@media (max-width: 767px) {
+    .graph-container {
+        width: 100%;
+        /* Full width */
+        margin-left: auto;
+        /* Center horizontally */
+        margin-right: auto;
+        /* Center horizontally */
+    }
+}
